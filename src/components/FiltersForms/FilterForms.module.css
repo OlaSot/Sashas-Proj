@@ -1,0 +1,115 @@
+.inputs {
+  display: flex;
+  align-items: center;
+}
+
+.priceText {
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-right: 18px;
+}
+
+.input {
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+  padding: 8px 16px;
+  outline: none;
+}
+
+.price {
+  padding: 8px 16px;
+  margin-right: 18px; /* Adjust the margin as needed */
+}
+
+.discountedItems,
+.inputContainer {
+  display: flex;
+  align-items: center;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.discount {
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-right: 18px;
+  margin-left: 20px;
+}
+.checkbox {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checked {
+  background-color: #4caf50; /* Green background color when checked */
+  border-color: #4caf50; /* Green border color when checked */
+  border-radius: var(--radius-small, 6px);
+}
+
+.checkmark {
+  color: white;
+  font-size: 43px;
+}
+
+.sortForm {
+  display: flex;
+  align-items: center;
+}
+
+.sorted {
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-right: 18px;
+  margin-left: 40px;
+}
+
+.select {
+  padding: 13px 26px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .inputs,
+  .priceText {
+    font-size: 10px;
+  }
+  .inputs input {
+    padding: 9px 4px;
+    font-size: 10px;
+  }
+
+  .discount {
+    font-size: 10px;
+  }
+
+  .checkbox,
+  .checked {
+    height: 35px;
+    width: 35px;
+  }
+
+  .sorted {
+    font-size: 10px;
+  }
+  .sortForm .select {
+    padding: 9px 4px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,114 @@
+.productsInCart {
+  display: flex;
+  border-radius: var(--radius-big, 12px);
+  border: 1px solid var(--grey-divider, #ddd);
+  position: relative;
+}
+.productsInCartImg {
+  width: 25%;
+  aspect-ratio: 1.1;
+  border-radius: var(--radius-big, 12px) 0 0 var(--radius-big, 12px);
+  border-right: 1px solid var(--grey-divider, #ddd);
+}
+.productInfo {
+  padding: 4.1% 60px 4.1% 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productInfo h5 {
+  overflow: hidden;
+  color: var(--txt-black, #282828);
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.propertyList {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+}
+.productCounter {
+  display: flex;
+}
+.productCounter button {
+  width: 4vw;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+  padding: 17px auto;
+  color: var(--grey-divider, #ddd);
+  font-size: 30px;
+  background: none;
+  cursor: pointer;
+}
+.productCounter p {
+  width: 6.7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  border-bottom: 1px solid var(--grey-divider, #ddd);
+  border-top: 1px solid var(--grey-divider, #ddd);
+  margin: 0 -6px;
+}
+.priceBlock {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+.discountPrice {
+  color: var(--txt-black, #282828);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.price {
+  color: var(--txt-grey, #8b8b8b);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: line-through;
+}
+.deleteIcon {
+  position: absolute;
+  top: 10%;
+  right: 3.3%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .discountPrice {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .discountPrice {
+    font-size: 2rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .discountPrice {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}

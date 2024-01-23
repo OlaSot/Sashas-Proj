@@ -1,0 +1,213 @@
+.main {
+  padding: 40px 2.5% 0 2.5%;
+}
+.navWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.navWrapper a {
+  padding: 8px 16px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+}
+.line {
+  height: 1px;
+  width: 1.1%;
+  background: #ddd;
+}
+.links {
+  color: var(--txt-grey, #8b8b8b);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 126%;
+}
+#activeLink {
+  color: var(--txt-black, #282828);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 126%;
+}
+.singleProductWrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  column-gap: 2.2%;
+}
+.singleProductImage {
+  width: 100%;
+  border-radius: var(--radius-big, 12px);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.title {
+  color: var(--txt-black, #282828);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 1.2px;
+}
+.priceBlock {
+  display: flex;
+}
+.discountPrice {
+  color: var(--txt-black, #282828);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-right: 32px;
+}
+.price {
+  display: flex;
+  color: var(--txt-grey, #8b8b8b);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: line-through;
+  align-items: end;
+  margin-right: 16px;
+}
+.discount {
+  border-radius: var(--radius-small, 6px);
+  background: var(--green, #393);
+  color: var(--txt-white, #fff);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  max-height: 35px;
+  padding: 4px 8px;
+}
+.basketSetupBar {
+  display: flex;
+  gap: 32px;
+}
+.quantityBlock {
+  display: flex;
+  border-radius: var(--radius-small, 6px);
+}
+.quantityBlock button {
+  width: 4vw;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+  padding: 17px auto;
+  color: var(--grey-divider, #ddd);
+  font-size: 30px;
+  background: none;
+  cursor: pointer;
+}
+.quantityBlock p {
+  width: 6.7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  border-bottom: 1px solid var(--grey-divider, #ddd);
+  border-top: 1px solid var(--grey-divider, #ddd);
+  margin: 0 -6px;
+}
+.toCartBtn {
+  width: 100%;
+  border-radius: var(--radius-small, 6px);
+  background: var(--green, #393);
+  border: none;
+  color: var(--txt-white, #fff);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  cursor: pointer;
+  transition: 250ms;
+}
+.toCartBtn:hover {
+  background-color: var(--txt-black, #282828);
+}
+.toCartBtn.added {
+  background: var(--txt-white, #a29f9f);
+  color: var(--black, #282828);
+  cursor: not-allowed;
+  border-radius: var(--radius-small, 6px);
+  border-color: #282828;
+}
+.description {
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.singleProductDescription {
+  overflow: hidden;
+  color: var(--txt-black, #282828);
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+@media screen and (max-width: 1024px) {
+  .singleProductWrapper {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .singleProductImage {
+    max-width: 100%;
+    height: auto;
+  }
+  .singleProductTitle {
+    font-size: 32px;
+  }
+
+  .discountPrice {
+    font-size: 48px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .discount {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .singleProductDescription {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .navWrapper {
+    margin-bottom: 20px;
+  }
+
+  .singleProductTitle {
+    margin-bottom: 20px;
+  }
+
+  .priceBlock {
+    margin-bottom: 20px;
+  }
+
+  .basketSetupBar {
+    gap: 16px;
+  }
+
+  .quantityBlock button {
+    padding: 10px;
+  }
+
+  .toCartBtn {
+    font-size: 16px;
+  }
+}
